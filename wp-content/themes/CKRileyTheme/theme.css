@@ -103,15 +103,15 @@ blockquote {
 body {
 	background: #000;
 	color: #111;
-	padding: 24px 0;
+	padding-bottom: 24px;
 }
 
 .container {
 	background: #fff;
 }
 	#header .container {
-		padding-top: 80px;
-		padding-bottom: 40px;
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 		#title {
 			position: relative;
