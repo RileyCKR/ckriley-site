@@ -114,6 +114,7 @@ a:focus {
 #main{
     width:784px;
     margin:auto;
+    padding-top:8px;
 }
 .container {
 	padding: 0 60px;

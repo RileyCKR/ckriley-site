@@ -114,7 +114,6 @@ body {
     background-image:url('images/border.png');
     border-left: 1px #ccc solid;
     border-right: 1px#ccc solid;
-    padding-top:8px;
 }
 
 .container {
@@ -209,9 +208,10 @@ body {
 	#footer .container {
 		padding-top: 20px;
 		padding-bottom: 20px;
-		background: #a9a9a9;
-		background: rgba(225,225,225,.75);
-		border-top: 1px #696969 solid;
+        background: none;
+		border-top: 1px #ccc solid;
+        border-left: none;
+        border-right: none;
 	}
 		#footer-content {
 			padding: 20px;
