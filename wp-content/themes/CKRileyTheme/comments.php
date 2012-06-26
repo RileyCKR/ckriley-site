@@ -83,7 +83,6 @@
 							</p>
 				         <?php do_action('comment_form', $post->ID); ?>
 			     </form>
-				<p><small><?php _e('By submitting a comment you grant '); bloginfo('name'); _e(' a perpetual license to reproduce your words and name/web site in attribution. Inappropriate and irrelevant comments will be removed at an admin’s discretion. Your email is used for verification purposes only, it will never be shared.'); ?></small></p>
 			<?php endif; ?>
 		<?php else : ?>
 			<p><?php _e('The comments are closed.'); ?></p>
