@@ -5,16 +5,16 @@
 	// Sidebar Widget
 	// Location: the sidebar
 	register_sidebar(array('name'=>'Sidebar',
-		'before_widget' => '<div class="widget-area widget-sidebar"><ul>',
-		'after_widget' => '</ul></div>',
+		'before_widget' => '<div class="widget-area widget-sidebar">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	));
   // Sidebar Widget (Home)
 	// Location: the sidebar (Homepage)
 	register_sidebar(array('name'=>'Sidebar_Home',
-		'before_widget' => '<div class="widget-area widget-sidebar"><ul>',
-		'after_widget' => '</ul></div>',
+		'before_widget' => '<div class="widget-area widget-sidebar">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	));
