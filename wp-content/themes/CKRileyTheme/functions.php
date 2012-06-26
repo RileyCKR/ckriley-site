@@ -10,6 +10,14 @@
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	));
+  // Sidebar Widget (Home)
+	// Location: the sidebar (Homepage)
+	register_sidebar(array('name'=>'Sidebar_Home',
+		'before_widget' => '<div class="widget-area widget-sidebar"><ul>',
+		'after_widget' => '</ul></div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
 	// Header Widget
 	// Location: right after the navigation
 	register_sidebar(array('name'=>'Header',
@@ -72,7 +80,8 @@
 	define('HEADER_IMAGE_HEIGHT', 226);
 	// gets included in the admin header
 	function admin_header_style() {
-	    ?><style type="text/css">
+	    ?>
+    <style type="text/css">
 	        #headimg {
 	            width: <?php echo HEADER_IMAGE_WIDTH; ?>px;
 	            height: <?php echo HEADER_IMAGE_HEIGHT; ?>px;
