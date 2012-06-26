@@ -38,13 +38,16 @@ code {
 }
 
 a:link {
-	color: #075b01;
+    color: #007ACC;
+	/*color: #075b01;*/
 }
 a:visited {
-	color: #054a01;
+    color: #007ACC;
+	/*color: #054a01;*/
 }
 a:hover,a:active {
-	color: #0fd003;
+    color: #40B7E9;
+	/*color: #0fd003 ;*/
 }
 
 .post-content ul,
@@ -103,15 +106,26 @@ blockquote {
 body {
 	background: #000;
 	color: #111;
+    background-image:url('bg.png');
 	padding-bottom: 24px;
+}
+
+#main{
+    background-image:url('images/border.png');
+    border-left: 1px #ccc solid;
+    border-right: 1px#ccc solid;
+    padding-top:8px;
 }
 
 .container {
 	background: #fff;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
 }
 	#header .container {
 		padding-top: 24px;
 		padding-bottom: 24px;
+        border-top: 1px solid #CCCCCC;
 	}
 		#title {
 			position: relative;
@@ -132,9 +146,6 @@ body {
 				font-size: 18px;
 				right: 0;
 				line-height: 36px;
-			}
-			#header-image.container {
-				padding: 0;
 			}
 	#nav-primary {
 		clear: both;
@@ -157,6 +168,13 @@ body {
 	#content {
 		border-top: 1px #ccc solid;
 	}
+        #content p{
+            padding-bottom:1em;
+            }
+        #content h1
+        {
+            padding-bottom:0.5em;
+        }
 		#widget-alert {
 			background: #C6D8CD;
 			border: 1px #5b816a solid;

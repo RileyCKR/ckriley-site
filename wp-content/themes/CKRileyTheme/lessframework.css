@@ -28,8 +28,8 @@ h1 {
 .large,
 h2,
 #content h1 {
-	font-size: 42px;
-	line-height: 48px;
+	font-size: 38px;
+	line-height: 44px;
 }
 
 .big,
@@ -111,7 +111,10 @@ a:focus {
 		margin-bottom: -1px;
 	}
 
-
+#main{
+    width:784px;
+    margin:auto;
+}
 .container {
 	padding: 0 60px;
 	width: 648px;
@@ -129,9 +132,8 @@ a:focus {
 			3 column layout resized to 365x100 displayed at 228x100
 		 */
 		#header-image img {
-			width: 890px;
-			height: 250px;
-			margin-left: -121px;
+			width: 510px;
+			height: 98px;
 			padding: 0;
 		}
 	#content {
@@ -172,15 +174,15 @@ img::-moz-selection {
 	60px  144px  228px  312px  396px  480px  564px  648px  732px  816px  900px  984px  1068px	*/
 
 @media only screen and (min-width: 1212px) {
-	
+
+    #main{
+        width:1228px;
+    }
 	.container {
 		padding: 0 72px;
 		width: 1068px;
 	}
 		#header-image img {
-			width: 1068px;
-			height: 300px;
-			margin-left: 0;
 		}
 		#content {
 			width: 608px; /* 8 columns */
@@ -199,7 +201,10 @@ img::-moz-selection {
 	60px  144px  228px  312px  396px	*/
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
-	
+
+    #main{
+        width:496px;
+    }
 	.container {
 		padding: 0 42px;
 		width: 396px;
@@ -216,12 +221,11 @@ img::-moz-selection {
 					line-height: 20px !important;
 				}
 			#header-image {
-				height: 150px !important;
+                
+				height: 98px !important;
 				padding: 0;
 			}
 				#header-image img {
-					width: 534px;
-					height: 150px;
 					margin-left: -69px;
 				}
 		#content {
@@ -292,7 +296,11 @@ img::-moz-selection {
 			float: left;
 			clear: left;
 		}
-	
+
+    #main
+    {
+        width:336px;
+    }
 	.container {
 		padding: 0 46px;
 		width: 228px;
@@ -305,9 +313,7 @@ img::-moz-selection {
 				line-height: 20px !important;
 			}
 		#header-image img {
-			width: 365px;
-			height: 100px;
-			margin-left: -68px;
+			margin-left: -69px;
 		}
 		#content {
 			padding: 10px;
