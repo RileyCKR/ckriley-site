@@ -211,10 +211,10 @@ nav.oldernewer {
 .clear {
 	clear: both;
 }
-.left {
+.left, img.alignleft {
 	float: left;
 }
-.right {
+.right, img.alignright {
 	float: right;
 }
 .aligncenter {
