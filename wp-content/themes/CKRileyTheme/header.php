@@ -46,13 +46,15 @@
 	<div id="header"><header>
 		<div class="container">
 			<div id="title">
-				<?php if( is_front_page() || is_home() || is_404() ) { ?>
-					<h1 id="logo"><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
-					<h2 id="tagline"><?php bloginfo('description'); ?></h2>
-				<?php } else { ?>
-					<h2 id="logo"><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>
-					<h3 id="tagline"><?php bloginfo('description'); ?></h3>
-				<?php } ?>
+				<hgroup>
+					<?php if( is_front_page() || is_home() || is_404() ) { ?>
+						<h1 id="logo"><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
+						<h2 id="tagline"><?php bloginfo('description'); ?></h2>
+					<?php } else { ?>
+						<h2 id="logo"><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>
+						<h3 id="tagline"><?php bloginfo('description'); ?></h3>
+					<?php } ?>
+				</hgroup>
 			</div><!--#title-->
 			<div id="header-image">
 				<img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" />
