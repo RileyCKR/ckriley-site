@@ -93,6 +93,9 @@ blockquote {
 		font-size: 20px;
 }
 
+p img{
+    padding:0 10px;
+}
 
 /*
 	layout styles
@@ -169,6 +172,7 @@ body {
 	}
         #content p{
             padding-bottom:1em;
+            text-align:justify;
             }
         #content h1
         {
