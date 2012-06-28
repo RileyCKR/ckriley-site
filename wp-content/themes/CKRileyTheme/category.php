@@ -15,7 +15,6 @@
 			</div>
 	
 			<div class="post-meta">
-				<p><?php _e('Categories:'); ?> <?php the_category(', ') ?></p>
 				<p><?php if (the_tags('Tags: ', ', ', ' ')); ?></p>
 			</div><!--.postMeta-->
 		</div><!--.post-single-->

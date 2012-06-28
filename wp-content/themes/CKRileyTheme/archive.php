@@ -23,8 +23,6 @@
 			</div>
 			
 			<div class="post-meta">
-				<p><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>
-				<p><?php _e('Categories: '); the_category(', ') ?></p>
 				<p><?php if (the_tags('Tags: ', ', ', ' ')); ?></p>
 			</div><!--.postMeta-->
 		</div><!--.post-single-->
