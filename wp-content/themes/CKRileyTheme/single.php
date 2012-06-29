@@ -15,7 +15,7 @@
 
 			<div id="post-meta">
 				<p>
-        <?php _e('Posted on '); the_time('F j, Y'); _e(' at '); the_time(); _e(', by '); the_author_posts_link() ?></p>
+        <?php _e('Posted on '); the_time('F j, Y'); _e(' at '); the_time(); ?>, by <a href="/about-me/">Chris Riley</a></p>
 				<p><?php the_tags('Tags: ', ', ', ' '); ?></p>
 			</div><!--#post-meta-->
 
