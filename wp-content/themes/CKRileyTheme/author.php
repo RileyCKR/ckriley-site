@@ -7,30 +7,21 @@
 			$curauth = get_userdata(intval($author));
 		endif;
 	?>
-	<div class="author">
-		<h1><?php _e('About:'); ?> <?php echo $curauth->display_name; ?></h1>
-		<p class="avatar"><?php if(function_exists('get_avatar')) { echo get_avatar( $curauth->user_email, $size = '180' ); } /* Displays the Gravatar based on the author's email address. Visit Gravatar.com for info on Gravatars */ ?></p>
-		
-		<?php if($curauth->description !="") { /* Displays the author's description from their Wordpress profile */ ?>
-			<p><?php echo $curauth->description; ?></a></p>
-		<?php } ?>
-	</div><!--.author-->
 
 	<div id="recent-author-posts">
-		<h3><?php _e('Recent Posts by '); echo $curauth->display_name; ?></h3>
+		<h1><?php _e('Recent Posts by '); echo $curauth->display_name; ?></h1>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); /* Displays the most recent posts by that author. Note that this does not display custom content types */ ?>
 			<?php static $count = 0;
 			if ($count == "5") // Number of posts to display
             	{ break; }
 			else { ?>
-				<h4><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 				<?php if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
-				<div class="post-excerpt">
-					<?php the_excerpt(); /* the excerpt is loaded to avoid duplicate content */ ?>
+				<div class="post-single">
+					<?php the_content(__('Read more')); ?>
 				</div><!--.postContent-->
 				<div class="post-meta">
 					<p><?php _e('Written on '); the_time('F j, Y'); _e(' at '); the_time() ?></p>
-					<p><?php _e('Categories: '); the_category(', ');?></p>
 					<p><?php the_tags('<br />Tags: ', ', ', ' '); ?></p>
 				</div><!--.postMeta-->
 			<?php $count++; } ?>
