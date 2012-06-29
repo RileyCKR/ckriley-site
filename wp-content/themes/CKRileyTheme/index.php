@@ -11,7 +11,7 @@
 					<?php the_content(__('Read more'));?>
 				</div>
 				<div class="post-meta">
-					<p><?php _e('Written on '); the_time('F j, Y'); _e(' at '); the_time(); _e(', by '); the_author_posts_link(); ?></p>
+					<p><?php _e('Written on '); the_time('F j, Y'); _e(' at '); the_time(); ?></p>
 					<p><?php if (the_tags('Tags: ', ', ', ' ')); ?></p>
 				</div><!--.postMeta-->
 			</div><!--.post-single-->

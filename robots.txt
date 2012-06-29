@@ -3,3 +3,4 @@ Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /category/
 Disallow: /tag/
+Disallow: /author/admin/
