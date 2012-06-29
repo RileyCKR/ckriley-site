@@ -43,7 +43,6 @@ h3,
 body,
 #content h3 {
 	font: 16px/24px Helvetica Neue, Helvetica, Trebuchet MS, Arial, Verdana, Tahoma, "DejaVu Sans", "Liberation sans", "Bitstream Vera Sans", sans-serif;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.1); -moz-text-shadow: 1px 1px 1px rgba(0,0,0,.1);
 }
 
 .small {
