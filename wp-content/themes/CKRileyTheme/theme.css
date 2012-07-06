@@ -97,6 +97,20 @@ p img{
     margin:0 12px;
 }
 
+.wp-caption{
+    background-color:#EEE;
+    padding:4px 4px 0 4px;
+    border-radius: 4px;
+    border:1px solid #CCC;
+}
+
+p.wp-caption-text{
+    background-color:#EEE;
+    padding-bottom: 0px !important;
+    font-size:12px;
+    border-top:1px solid #CCC;
+}
+
 /*
 	layout styles
  */
