@@ -189,6 +189,12 @@ body {
 			margin-bottom: 20px;
 			border-bottom: 1px #dedede solid;
 		}
+        .social { margin-bottom: 1em; }
+        .social .socialLogo { width:152px; float:left; }
+        .social .socialText { float:left;margin-top:1em; }
+        .social .socialLogo img { margin:auto; display:block;}
+                    
+        }
 	#sidebar {
 		border-top: 1px #ccc solid;
 	}
