@@ -28,7 +28,7 @@ h6 {
 .monospace,
 var,
 code {
-	font-family: courier new, courier, monospace;
+	font-family: consolas, courier new, courier, monospace;
 }
 
 .amp {
