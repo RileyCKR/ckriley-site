@@ -9,7 +9,7 @@
 	</footer></div><!--#footer-->
 </div><!--#main-->
 <?php wp_footer(); /* this is used by many Wordpress features and plugins to work proporly */ ?>
-<?php if ( ! is_user_logged_in() ) : ?>
+<?php if ( ! is_user_logged_in() && $_SERVER['HTTP_HOST'] != 'localhost') : ?>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-32920793-1']);
