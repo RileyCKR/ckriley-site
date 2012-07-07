@@ -59,15 +59,17 @@
 			<div id="header-image">
 				<img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" />
 			</div><!--#header-image-->
-			<div id="nav-primary" class="nav"><nav>
+			<div id="nav-primary" class="nav">
+                            <nav>
 				<?php if ( is_user_logged_in() ) {
 				     wp_nav_menu( array( 'theme_location' => 'logged-in-menu' ) ); /* if the visitor is logged in, this primary navigation will be displayed */
 				} else {
 				     wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); /* if the visitor is NOT logged in, this primary navigation will be displayed. if a single menu should be displayed for both conditions, set the same menues to be displayed under both conditions through the Wordpress backend */
 				} ?>
-			</nav></div><!--#nav-primary-->
+                                <div class="clear" />
+                            </nav>
+                        </div><!--#nav-primary-->
 			<?php if ( ! dynamic_sidebar( 'Header' ) ) : ?><!-- Wigitized Header --><?php endif ?>
-			<div class="clear"></div>
 		</div><!--.container-->
 	</header></div><!--#header-->
 	<div class="container">
