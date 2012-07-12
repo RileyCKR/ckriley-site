@@ -93,9 +93,9 @@ blockquote {
 		font-size: 20px;
 }
 
-p img{
-    margin:0 12px;
-}
+p img{ margin:0 12px; }
+p img.alignright { margin-right:0px; }
+p img.alignleft { margin-left:0px; }
 
 .wp-caption{
     background-color:#EEE;
