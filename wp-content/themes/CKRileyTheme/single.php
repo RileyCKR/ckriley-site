@@ -14,7 +14,7 @@
 			</article>
 
 			<div id="post-meta">
-				<p>
+				<p class="tight">
         <?php _e('Posted on '); the_time('F j, Y'); _e(' at '); the_time(); ?>, by <a href="/about-me/">Chris Riley</a></p>
 				<p><?php the_tags('Tags: ', ', ', ' '); ?></p>
 			</div><!--#post-meta-->
@@ -22,8 +22,9 @@
 		</div><!-- #post-## -->
 
 		<div class="newer-older">
-			<p class="older"><?php previous_post_link('%link', '&laquo; Previous post') ?></p>
-			<p class="newer"><?php next_post_link('%link', 'Next Post &raquo;') ?></p>
+			<div class="older"><?php previous_post_link('%link', '&laquo; Previous post') ?></div>
+      <div class="newer"><?php next_post_link('%link', 'Next Post &raquo;') ?></div>
+      <div class="clear"></div>
 		</div><!--.newer-older-->
 
 		<?php comments_template( '', true ); ?>
