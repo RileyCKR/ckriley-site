@@ -130,9 +130,9 @@ body {
 }
 
 #main{
-    background-image:url('images/border.png');
-    border-left: 1px #ccc solid;
-    border-right: 1px#ccc solid;
+    background: url('images/border.png') #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 .container {
