@@ -59,19 +59,30 @@
 					<?php if($user_ID) : ?>
 						<p><?php _e('Logged in as '); ?><a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account"><?php _e('Log out'); ?> &raquo;</a></p>
 						<?php else : ?>
-			            	<p><?php _e('Allowed HTML tags:'); ?> <?php echo allowed_tags(); /* outputs the html tags that are allowed in comments */ ?></p>
-			            	<p>
-								<label for="author"><small><?php _e('Name'); ?> <?php if($req) echo "(required)"; ?></small></label>
-								<input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
-							</p>
-							<p>
-								<label for="email"><small><?php _e('Mail (will not be shared)'); ?> <?php if($req) echo "(required)"; ?></small></label>
-								<input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
-							</p>
-							<p>
-								<label for="url"><small><?php _e('Website'); ?></small></label>
-								<input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
-							</p>
+			        <div>
+                <div>
+								  <label for="author"><small><?php _e('Name'); ?> <?php if($req) echo "(required)"; ?></small></label>
+                </div>
+                <div>
+								  <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
+                </div>
+							</div>
+							<div>
+                <div>
+								  <label for="email"><small><?php _e('Mail (will not be shared)'); ?> <?php if($req) echo "(required)"; ?></small></label>
+                </div>
+                <div>
+                  <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
+                </div>
+							</div>
+							<div>
+                <div>
+								  <label for="url"><small><?php _e('Website'); ?></small></label>
+                </div>
+                <div>
+								  <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
+                </div>
+							</div>
 						<?php endif; ?>
 							<p>
 								<label for="comment"><small><?php _e('Comment'); ?></small></label>
