@@ -129,20 +129,24 @@ body {
 	padding-bottom: 24px;
 }
 
-#main{
+#main {
     background: url('images/border.png') #ccc;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
+    padding: 8px;
+}
+
+#main-inner {
+    background: #fff;
+    border: 1px solid #CCCCCC;
+    width: 100%;
 }
 
 .container {
-	background: #fff;
-    border-left: 1px #ccc solid;
-    border-right: 1px #ccc solid;
+
 }
 	#header .container {
 		padding-top: 24px;
-        border-top: 1px solid #CCCCCC;
 	}
 		#title {
 			position: relative;
@@ -246,11 +250,7 @@ body {
 					}
 	#footer .container {
 		padding-top: 20px;
-		padding-bottom: 20px;
-        background: none;
-		border-top: 1px #ccc solid;
-        border-left: none;
-        border-right: none;
+		padding-bottom: 12px;
 	}
 		#footer-content {
 			padding: 20px;

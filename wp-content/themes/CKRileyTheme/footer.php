@@ -1,5 +1,6 @@
-	<div class="clear"></div>
-	</div><!--.container-->
+	  <div class="clear"></div>
+	  </div><!--.container-->
+  </div><!--#main-inner-->
 	<div id="footer"><footer>
 		<div class="container">
 			<?php if ( ! dynamic_sidebar( 'Footer' ) ) : ?><!--Wigitized Footer--><?php endif ?>

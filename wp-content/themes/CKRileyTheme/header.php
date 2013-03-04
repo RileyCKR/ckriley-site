@@ -43,33 +43,34 @@
 	<p><a href="#content"><?php _e('Skip to Content'); ?></a></p><?php /* used for accessibility, particularly for screen reader applications */ ?>
 </div><!--.none-->
 <div id="main"><!-- this encompasses the entire Web site -->
-	<div id="header"><header>
+	<div id="main-inner">
+		<div id="header"><header>
+			<div class="container">
+				<div id="title">
+					<hgroup>
+						<?php if( is_front_page() || is_home() || is_404() ) { ?>
+							<h1 id="logo"><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
+							<h2 id="tagline"><?php bloginfo('description'); ?></h2>
+						<?php } else { ?>
+							<h2 id="logo"><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>
+							<h3 id="tagline"><?php bloginfo('description'); ?></h3>
+						<?php } ?>
+					</hgroup>
+				</div><!--#title-->
+				<div id="header-image">
+					<img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" />
+				</div><!--#header-image-->
+				<div id="nav-primary" class="nav">
+								<nav>
+					<?php if ( is_user_logged_in() ) {
+						 wp_nav_menu( array( 'theme_location' => 'logged-in-menu' ) ); /* if the visitor is logged in, this primary navigation will be displayed */
+					} else {
+						 wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); /* if the visitor is NOT logged in, this primary navigation will be displayed. if a single menu should be displayed for both conditions, set the same menues to be displayed under both conditions through the Wordpress backend */
+					} ?>
+									<div class="clear" />
+								</nav>
+							</div><!--#nav-primary-->
+				<?php if ( ! dynamic_sidebar( 'Header' ) ) : ?><!-- Wigitized Header --><?php endif ?>
+			</div><!--.container-->
+		</header></div><!--#header-->
 		<div class="container">
-			<div id="title">
-				<hgroup>
-					<?php if( is_front_page() || is_home() || is_404() ) { ?>
-						<h1 id="logo"><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
-						<h2 id="tagline"><?php bloginfo('description'); ?></h2>
-					<?php } else { ?>
-						<h2 id="logo"><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>
-						<h3 id="tagline"><?php bloginfo('description'); ?></h3>
-					<?php } ?>
-				</hgroup>
-			</div><!--#title-->
-			<div id="header-image">
-				<img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" />
-			</div><!--#header-image-->
-			<div id="nav-primary" class="nav">
-                            <nav>
-				<?php if ( is_user_logged_in() ) {
-				     wp_nav_menu( array( 'theme_location' => 'logged-in-menu' ) ); /* if the visitor is logged in, this primary navigation will be displayed */
-				} else {
-				     wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); /* if the visitor is NOT logged in, this primary navigation will be displayed. if a single menu should be displayed for both conditions, set the same menues to be displayed under both conditions through the Wordpress backend */
-				} ?>
-                                <div class="clear" />
-                            </nav>
-                        </div><!--#nav-primary-->
-			<?php if ( ! dynamic_sidebar( 'Header' ) ) : ?><!-- Wigitized Header --><?php endif ?>
-		</div><!--.container-->
-	</header></div><!--#header-->
-	<div class="container">
