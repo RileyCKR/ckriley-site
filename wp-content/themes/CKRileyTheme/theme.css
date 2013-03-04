@@ -318,7 +318,6 @@ body {
 			padding-left: 52px;
 			padding-right: 52px;
 			width: 376px;
-			border-bottom: 1px #ccc solid;
 		}
 		#footer .container {
 			padding-top: 0;
@@ -369,12 +368,10 @@ body {
 		#sidebar {
 			float: none;
 			background: #eee;
-			margin-left: -42px;
-			margin-right: -42px;
-			padding-left: 52px;
-			padding-right: 52px;
-			width: 212px;
-			border-bottom: 1px #ccc solid;
+			margin-left: -46px;
+			margin-right: -46px;
+			padding-left: 56px;
+			padding-right: 56px;
 		}
 		#footer .container {
 			padding-top: 0;
