@@ -139,7 +139,6 @@ body {
 #main-inner {
     background: #fff;
     border: 1px solid #CCCCCC;
-    width: 100%;
 }
 
 .container {
@@ -229,7 +228,7 @@ body {
         #content p.tight { margin:0; }
 
 	#sidebar {
-		border-top: 1px #ccc solid;
+
 	}
 		#sidebar .widget-area {
 			padding-bottom: 20px;
@@ -318,6 +317,7 @@ body {
 			padding-left: 52px;
 			padding-right: 52px;
 			width: 376px;
+            border-top: 1px solid #ccc;
 		}
 		#footer .container {
 			padding-top: 0;
@@ -372,6 +372,7 @@ body {
 			margin-right: -46px;
 			padding-left: 56px;
 			padding-right: 56px;
+            border-top: 1px solid #ccc;
 		}
 		#footer .container {
 			padding-top: 0;
