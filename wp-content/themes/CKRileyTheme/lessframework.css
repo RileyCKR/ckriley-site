@@ -116,7 +116,6 @@ a:focus {
 }
 .container {
 	padding: 0 60px;
-	width: 648px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -179,7 +178,6 @@ img::-moz-selection {
     }
 	.container {
 		padding: 0 72px;
-		width: 1068px;
 	}
 		#header-image img {
 		}
@@ -206,7 +204,6 @@ img::-moz-selection {
     }
 	.container {
 		padding: 0 42px;
-		width: 396px;
 		-webkit-text-size-adjust: 100%; /* Prevents Mobile Safari from bumping up font sizes in landscape */
 	}
 		#header .container {
@@ -302,7 +299,6 @@ img::-moz-selection {
     }
 	.container {
 		padding: 0 46px;
-		width: 228px;
 		-webkit-text-size-adjust: 100%; /* Prevents Mobile Safari from bumping up font sizes in landscape */
 	}
 		#title {
