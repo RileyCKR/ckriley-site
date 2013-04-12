@@ -1,3 +1,13 @@
+<?php
+//If a request had a mixed-case uri, lowercase it and try again
+$uri = $_SERVER['REQUEST_URI'];
+$lowerUri = strtolower($uri);
+if (!($uri === $lowerUri))
+{
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location: http://$_SERVER[HTTP_HOST]$lowerUri");
+}
+?>
 <?php get_header(); ?>
 <div id="content">
 	<div id="error404" class="post">
