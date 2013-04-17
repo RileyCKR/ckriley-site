@@ -18,15 +18,12 @@
 	} else {
 		echo wp_title(''); echo ' | '; bloginfo( 'name' );
 	} ?></title>
-	<meta name="description" content="<?php wp_title(''); echo ' | '; bloginfo( 'description' ); ?>" />
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<meta name="viewport" content="width=device-width; initial-scale=1"/><?php /* Add "maximum-scale=1" to fix the Mobile Safari auto-zoom bug on orientation changes, but keep in mind that it will disable user-zooming completely. Bad for accessibility. */ ?>
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'atom_url' ); ?>" />
-	<?php wp_enqueue_script("jquery"); /* Loads jQuery if it hasn't been loaded already */ ?>
 	<?php /* The HTML5 Shim is required for older browsers, mainly older versions IE */ ?>
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,13 +33,14 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/lessframework.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/theme.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <?php /* wp_enqueue_script("jquery");  Loads jQuery if it hasn't been loaded already */ ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div class="none">
 	<p><a href="#content"><?php _e('Skip to Content'); ?></a></p><?php /* used for accessibility, particularly for screen reader applications */ ?>
-</div><!--.none-->
-<div id="main"><!-- this encompasses the entire Web site -->
+</div>
+<div id="main">
 	<div id="main-inner">
 		<div id="header"><header>
 			<div class="container">
@@ -56,10 +54,10 @@
 							<h3 id="tagline"><?php bloginfo('description'); ?></h3>
 						<?php } ?>
 					</hgroup>
-				</div><!--#title-->
+				</div>
 				<div id="header-image">
 					<img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" />
-				</div><!--#header-image-->
+				</div>
 				<div id="nav-primary" class="nav">
 								<nav>
 					<?php if ( is_user_logged_in() ) {
@@ -69,8 +67,8 @@
 					} ?>
 									<div class="clear" />
 								</nav>
-							</div><!--#nav-primary-->
-				<?php if ( ! dynamic_sidebar( 'Header' ) ) : ?><!-- Wigitized Header --><?php endif ?>
-			</div><!--.container-->
-		</header></div><!--#header-->
+							</div>
+				<?php if ( ! dynamic_sidebar( 'Header' ) ) : ?><?php endif ?>
+			</div>
+		</header></div>
 		<div class="container">
