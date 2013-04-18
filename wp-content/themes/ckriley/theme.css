@@ -262,8 +262,28 @@ body {
 				#footer li a {
 					padding: 0 10px;
 				}
-
-
+                
+.none {
+	display: none;
+}
+.clear {
+	clear: both;
+}
+.left, img.alignleft {
+	float: left;
+}
+.right, img.alignright {
+	float: right;
+}
+.aligncenter {
+	text-align: center;
+}
+.alignleft {
+	text-align: left;
+}
+.alignright {
+	text-align: right;
+}
 
 /*	13-column layout
 	60 px columns, 24 px gutters, 72 px margins, 1212 px total (extra space for scrollbars)
