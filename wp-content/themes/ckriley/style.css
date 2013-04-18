@@ -342,24 +342,11 @@ body {
 				margin: 0;
 				list-style: none;
 			}
-				#sidebar .children {
-					padding-left: 10px;
-				}
-					#sidebar .children .children {
-						padding-left: 10px;
-					}
+            
 	#footer .container {
 		padding-top: 20px;
 		padding-bottom: 12px;
 	}
-        #footer ul,
-        #footer li {
-            display: inline;
-            list-style: none;
-        }
-            #footer li a {
-                padding: 0 10px;
-            }
                 
 .none {
 	display: none;
