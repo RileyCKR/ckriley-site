@@ -1,10 +1,5 @@
 @charset utf-8;
 
-/*	Less Framework 3
-	by Joni Korpi
-	http://lessframework.com	*/
-
-
 /*	Resets
 	------	*/
 
@@ -14,52 +9,29 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 /*	Typography presets
 	------------------	*/
 
-.gigantic {
-	font-size: 110px;
-	line-height: 120px;
-	letter-spacing: -2px;
-}
-
-.huge,
 h1 {
 	font-size: 68px;
 	line-height: 72px;
 	letter-spacing: -1px;
 }
 
-.large,
 h2,
 #content h1 {
 	font-size: 38px;
 	line-height: 44px;
 }
 
-.big,
 h3,
 #content h2 {
 	font-size: 26px;
 	line-height: 36px;
 }
 
-.normal,
 body,
 #content h3 {
 	font: 16px/24px Helvetica Neue, Helvetica, Trebuchet MS, Arial, Verdana, Tahoma, "DejaVu Sans", "Liberation sans", "Bitstream Vera Sans", sans-serif;
 }
 
-.small {
-	font-size: 13px;
-	line-height: 18px;
-}
-
-abbr,
-acronym{
-	border-bottom: 1px dotted;
-	cursor: help;
-	font-variant: small-caps;
-}
-address,
-cite,
 em,
 i{
 	font-style: italic;
@@ -730,5 +702,3 @@ body {
 	}
 	
 }
-
-/* Always remember to compress your live stylesheet and keep an uncompressed backup */
