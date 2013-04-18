@@ -463,7 +463,7 @@ body {
 		-webkit-text-size-adjust: 100%; /* Prevents Mobile Safari from bumping up font sizes in landscape */
 	}
 		#header .container {
-			padding-top: 40px;
+			padding-top: 24px;
 			padding-bottom: 12px;
 		}
 			#title {
@@ -654,9 +654,6 @@ body {
 	.container {
 		
 	}
-        #header .container {
-            padding-top: 24px;
-        }
 		#logo,
 		#tagline {
 			position: relative;
