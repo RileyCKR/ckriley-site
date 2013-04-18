@@ -654,6 +654,9 @@ body {
 	.container {
 		
 	}
+        #header .container {
+            padding-top: 24px;
+        }
 		#logo,
 		#tagline {
 			position: relative;
