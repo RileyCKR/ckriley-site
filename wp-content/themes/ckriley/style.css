@@ -292,15 +292,20 @@ body {
 	60px  144px  228px  312px  396px  480px  564px  648px  732px  816px  900px  984px  1068px	*/
 
 @media only screen and (min-width: 1212px) {
-	
+
+    #main{
+        width:1212px;
+    }
 	.container {
-		
+		padding: 0 72px;
 	}
+		#header-image img {
+		}
 		#content {
-			
+			width: 608px; /* 8 columns */
 		}
 		#sidebar {
-			
+			width: 356px; /* 5 columns */
 		}
 	
 }

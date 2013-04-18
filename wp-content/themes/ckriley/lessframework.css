@@ -164,33 +164,6 @@ img::-moz-selection {
 
 
 
-
-/*	13-column layout
-	60 px columns, 24 px gutters, 72 px margins, 1212 px total (extra space for scrollbars)
-	---------------------------------------------------------------------------------------
-	1     2      3      4      5      6      7      8      9      10     11     12     13
-	60px  144px  228px  312px  396px  480px  564px  648px  732px  816px  900px  984px  1068px	*/
-
-@media only screen and (min-width: 1212px) {
-
-    #main{
-        width:1212px;
-    }
-	.container {
-		padding: 0 72px;
-	}
-		#header-image img {
-		}
-		#content {
-			width: 608px; /* 8 columns */
-		}
-		#sidebar {
-			width: 356px; /* 5 columns */
-		}
-	
-}
-
-
 /*	5-column layout
 	60 px columns, 24 px gutters, 42 px margins, 480 px total
 	---------------------------------------------------------
